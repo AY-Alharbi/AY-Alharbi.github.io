@@ -1,0 +1,162 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #203238;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #203238;
+}
+
+header p {
+    font-size: 1em;
+    color: #555;
+}
+
+.generator {
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.generator h1{
+    font-size: 1em;
+    color: #555;
+}
+
+
+.password-display {
+    margin-bottom: 20px;
+}
+
+.password-display input {
+    width: 79%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #203238;
+}
+
+.password-display button {
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background: #649DAE;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.password-display button:hover {
+    background: #537f8d;
+}
+
+.options label {
+    display: block;
+    margin-bottom: 5px;
+    color: #203238;
+}
+
+.options input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    color: #203238;
+}
+
+.length-slider {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px; 
+}
+
+.length-slider label {
+    font-size: 1em;
+    color: #203238;
+    text-align: left; 
+}
+
+input[type="range"] {
+    -webkit-appearance: none;
+    width: 50%; 
+    height: 8px;
+    border-radius: 10px;
+    background: linear-gradient(90deg, #649DAE 0%, #d3d3d3 100%);
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #649DAE;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="range"]::-moz-range-thumb {
+    width: 24px;
+    height: 24px;
+    background: #649DAE;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+input[type="range"]::-ms-thumb {
+    width: 24px;
+    height: 24px;
+    background: #649DAE;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+}
+
+button.generate {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 15px;
+    font-size: 1em;
+    color: #fff;
+    background: #649DAE;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.generate:hover {
+    background-color: #537f8d;
+}
+
+footer {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}

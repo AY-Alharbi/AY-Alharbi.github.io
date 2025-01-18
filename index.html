@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Password_Generator\pictures\icon.png" type="image/x-icon">
+    <title>Password Generator</title>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div id="logo">
+            <img src="logo.png" alt="Password Generator Logo" style="width:150px; height:120px;">
+        </div>
+        <h1>Generate Strong and Secure Passwords</h1>
+        <p>Use this tool to create strong passwords for your accounts and keep your data secure.</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="generator">
+            <!-- Password Display -->
+            <div class="password-display">
+                <label for="passwordField">Generated Password:</label>
+                <div class="password">
+                    <input type="text" id="passwordField" readonly placeholder="Your password will appear here" />
+                    <button id="copyButton">Copy</button>
+                    <h1 id="strengthResult">Strength: </h>
+                </div>
+            </div>
+
+
+            <!-- Options Section -->
+            <div class="options">
+                <label for="customChars">Custom Characters:</label>
+                <input type="text" id="customChars" placeholder="Enter your own characters (optional)" />
+
+                <div class="checkboxes">
+                    <label>
+                        <input type="checkbox" id="Uppercase" checked />
+                        Include uppercase letters (A-Z)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="Lowercase" />
+                        Include lowercase letters (a-z)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="Number" />
+                        Include numbers (0-9)
+                    </label>
+                    <label>
+                        <input type="checkbox" id="Symbols" />
+                        Include symbols (!@$#%^)
+                    </label>
+                </div>
+            </div>
+
+            <!-- Length Slider -->
+            <div class="length-slider">
+                <label for="passwordLength">Password Length:</label>
+                <input type="range" id="passwordLength" min="8" max="25" value="8" />
+                <span id="lengthValue">8</span>
+            </div>
+
+            <!-- Generate Button -->
+            <button class="generate">Generate Password</button>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Password Generator.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
