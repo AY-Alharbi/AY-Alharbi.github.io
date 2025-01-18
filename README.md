@@ -30,4 +30,4 @@ This is a simple project to generate strong and customized passwords. If you are
 
 ## How to run 🖥️
 
-Click  ()
+Click  (https://ay-alharbi.github.io/Password-Generator/)
